@@ -20,5 +20,6 @@ class MyEmailJob {
 			from "$fromAddr"
 			body "$msg"
 		}
-    }
+		context.mergedJobDataMap.clear()
+  }
 }
